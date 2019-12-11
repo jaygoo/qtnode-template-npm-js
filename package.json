@@ -1,6 +1,6 @@
 {
   "name": "qtnode-templeate-npm-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "采用es6的npm包模板",
   "main": "index.js",
   "bin": {},
