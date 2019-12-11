@@ -1,6 +1,6 @@
 {
   "name": "qtnode-templeate-npm-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "采用es6的npm包模板",
   "main": "index.js",
   "bin": {
@@ -10,15 +10,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "guoyujie",
-  "bugs":"https://github.com/jaygoo/qtnode-templeate-npm-js/issues",
+  "bugs": "https://github.com/jaygoo/qtnode-templeate-npm-js/issues",
   "repository": {
     "type": "git",
     "url": "git@github.com:jaygoo/qtnode-templeate-npm-js.git"
   },
   "homepage": "https://github.com/jaygoo/qtnode-templeate-npm-js/blob/master/README.MD",
-  "keywords": [
-
-  ],
+  "keywords": [],
   "license": "ISC",
   "dependencies": {
     "commander": "^4.0.1",
