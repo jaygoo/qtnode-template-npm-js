@@ -19,7 +19,7 @@ module.exports = {
     },
     output: {//输出目录
         path:  path.resolve( './dist'),
-        filename: 'bundle.js',
+        filename: '[name].js',
         publicPath: path.resolve("/")
     },
 
