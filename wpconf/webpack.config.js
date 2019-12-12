@@ -20,9 +20,13 @@ module.exports = {
     output: {//输出目录
         path:  path.resolve( './dist'),
         filename: '[name].js',
-        publicPath: path.resolve("/")
+        publicPath: path.resolve("/"),
+        library: 'webpackNumbers',
+        libraryTarget: 'commonjs'
     },
+    externals: {
 
+    },
     module: {
         rules: [
             {
