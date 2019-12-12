@@ -21,7 +21,6 @@ module.exports = {
         path:  path.resolve( './dist'),
         filename: '[name].js',
         publicPath: path.resolve("/"),
-        library: 'webpackNumbers',
         libraryTarget: 'commonjs'
     },
     externals: {
