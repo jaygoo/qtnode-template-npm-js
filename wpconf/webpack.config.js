@@ -1,12 +1,9 @@
-//webpack.config.js
-var webpack = require('webpack');//引入Webpack模块供我们调用，这里只能使用ES5语法，使用ES6语法会报错
+var webpack = require('webpack');
 const path = require('path');
 
 function resolve (dir) {
-    let a =  path.resolve(__dirname, '..', dir)
-    console.log("--", dir ,a);
-    return a;
-
+    let p =  path.resolve(__dirname, '..', dir)
+    return p;
 }
 
 module.exports = {
@@ -21,8 +18,8 @@ module.exports = {
         path:  path.resolve( './dist'),
         filename: '[name].js',
         publicPath: path.resolve("/"),
-        library: 'nnn',
-        libraryTarget: 'commonjs'
+        library: 'pkg_name',
+        libraryTarget: 'commonjs2'
     },
     externals: {
 
@@ -32,7 +29,7 @@ module.exports = {
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                use: 'babel-loader'//loader的名称（必须）
+                use: 'babel-loader'
             }
         ]
     },
