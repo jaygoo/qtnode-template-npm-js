@@ -21,7 +21,8 @@ module.exports = {
         path:  path.resolve( './dist'),
         filename: '[name].js',
         publicPath: path.resolve("/"),
-        libraryTarget: 'commonjs2'
+        library: 'nnn',
+        // libraryTarget: 'commonjs2'
     },
     externals: {
 
