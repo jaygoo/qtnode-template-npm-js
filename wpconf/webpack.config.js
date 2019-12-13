@@ -22,7 +22,7 @@ module.exports = {
         filename: '[name].js',
         publicPath: path.resolve("/"),
         library: 'nnn',
-        // libraryTarget: 'commonjs2'
+        libraryTarget: 'commonjs'
     },
     externals: {
 
