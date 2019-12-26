@@ -5,7 +5,9 @@ dev:
   - middleware: devserver
 
 build:
-
+  script:
+    - init
+    - test
   - middleware: webpack
 
 test:
