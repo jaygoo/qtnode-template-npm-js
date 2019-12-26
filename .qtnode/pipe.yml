@@ -1,0 +1,13 @@
+init:
+  - pkg: console
+
+dev:
+  - middleware: devserver
+
+build:
+  - middleware: webpack
+
+test:
+  - middleware: mocha
+
+publish:

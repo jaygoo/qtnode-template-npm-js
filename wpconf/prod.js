@@ -1,15 +1,15 @@
-var webpack = require('webpack');
+const webpack = require('webpack');
 const path = require('path');
 
 function resolve (dir) {
-    let p =  path.resolve(__dirname, '..', dir)
+    let p = path.resolve(__dirname, '..', dir);
     return p;
 }
 
 module.exports = {
-    mode: "production",
-    devtool: 'source-map',
-    target: "node",
+    mode: 'production',
+    devtool: 'inline-source-map',
+    target: 'node',
 
     entry: {
         index: resolve('./entry/index.js')
@@ -17,7 +17,7 @@ module.exports = {
     output: {//输出目录
         path:  path.resolve( './dist'),
         filename: '[name].js',
-        publicPath: path.resolve("/"),
+        publicPath: path.resolve('/'),
         library: 'pkg_name',
         libraryTarget: 'commonjs2'
     },
@@ -27,14 +27,13 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
+                test: /\.(js)$/,
                 use: 'babel-loader'
             }
         ]
     },
 
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
+        new webpack.HotModuleReplacementPlugin()
     ]
 };

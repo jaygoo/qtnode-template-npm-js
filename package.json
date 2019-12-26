@@ -17,8 +17,7 @@
   "keywords": [],
   "license": "ISC",
   "dependencies": {
-    "commander": "^4.0.1",
-    "inquirer": "^7.0.0"
+
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
