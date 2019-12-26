@@ -5,9 +5,8 @@ dev:
   - middleware: devserver
 
 build:
-  -script:
-    - init
-    - test
+  - middleware: eslint
+  - middleware: mocha
   - middleware: webpack
 
 test:
