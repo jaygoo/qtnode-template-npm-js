@@ -5,9 +5,11 @@ dev:
   - middleware: devserver
 
 build:
+
   - middleware: webpack
 
 test:
+  - middleware: eslint
   - middleware: mocha
 
 publish:
